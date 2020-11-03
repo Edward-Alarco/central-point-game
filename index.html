@@ -21,9 +21,9 @@
 
     <div class="container-fluid" id="main-container">
         <div class="row w-100 h-100">
-            <div class="col-12 col-md-5">
+            <div class="col-12 col-sm-6 col-md-5">
                 <div class="seccion-encabezado">
-                    <h2 id="main-title">central point</h2>
+                    <u style="color: #fff; padding-top: 0.25rem;"><h2 id="main-title">central point</h2></u>
 
                     <div class="tab-content" id="nav-tabContent">
                         <div class="tab-pane fade show active" role="tabpanel" id="list-1"
@@ -46,6 +46,10 @@
                         <div class="tab-pane fade" role="tabpanel" id="list-5" aria-labelledby="list-5-list">
                             <p class="parrafo-aviso" id="primer-parrafo-quinto-nivel"></p>
                             <p class="parrafo-aviso" id="segundo-parrafo-quinto-nivel"></p>
+                        </div>
+                        <div class="tab-pane fade" role="tabpanel" id="list-6" aria-labelledby="list-6-list">
+                            <p class="parrafo-aviso" id="primer-parrafo-sexto-nivel"></p>
+                            <p class="parrafo-aviso" id="segundo-parrafo-sexto-nivel"></p>
                         </div>
                     </div>
                 </div>
@@ -122,10 +126,26 @@ h2 {
                             <textarea spellcheck="false" autocapitalize="none" id="code-five" autofocus
                                 style="height: 24px;"></textarea>
                             <pre id="codigo-final">}</pre>
-                        </div>
 
+                            <button id="btnSiguienteSix" type="button" disabled>Siguiente &nbsp;<i
+                                class="fas fa-long-arrow-alt-right"></i></button>
+                        </div>
+                        <div class="texto-cod-six">
+                            <pre id="codigo-comienzo">
+.contenedor {
+    top: 50%;
+    left: 50%;</pre>
+                            <textarea spellcheck="false" autocapitalize="none" id="code-six" autofocus
+                                style="height: 24px;"></textarea>
+                            <pre id="codigo-final">}</pre>
+                        </div>
                     </section>
-                    <div class="border-0 rounded-0 list-group list-group-horizontal" id="list-tab" role="tablist">
+                    <div class="text-center my-3">
+                        <p style="font-size: 0.875rem; color: rgba(255, 255, 255, 0.8);">
+                            Hecho con <span style="color: #e74c3c;">❤</span> por <a href="https://github.com/Edward-Alarco" style="color: #fff;">Edward A.</a> - <a style="color: #fff;" href="https://github.com/Edward-Alarco/central-point-game">Github</a>
+                        </p>
+                    </div>
+                    <div class="d-none border-0 rounded-0 list-group list-group-horizontal" id="list-tab" role="tablist">
                         <a class="border-0 rounded-0 p-1 text-center list-group-item list-group-item-action active"
                             id="list-1-list" aria-controls="1" href="#list-1" role="tab" data-toggle="list">1</a>
                         <a class="border-0 rounded-0 p-1 text-center list-group-item list-group-item-action"
@@ -136,10 +156,12 @@ h2 {
                             id="list-4-list" aria-controls="4" href="#list-4" role="tab" data-toggle="list">4</a>
                         <a class="border-0 rounded-0 p-1 text-center list-group-item list-group-item-action"
                             id="list-5-list" aria-controls="5" href="#list-5" role="tab" data-toggle="list">5</a>
+                        <a class="border-0 rounded-0 p-1 text-center list-group-item list-group-item-action"
+                            id="list-6-list" aria-controls="6" href="#list-6" role="tab" data-toggle="list">6</a>
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-md-7 d-flex align-items-center">
+            <div class="col-12 col-sm-6 col-md-7 d-flex align-items-center">
                 <div id="contenedor-secundario">
                     <!-- <img src="img/javascript-mini.png" draggable="false" alt="Muñeco Javascript" class="object"> -->
                     <img src="img/figures/idContenedor.png" alt="" class="figure idContenedor">
@@ -149,6 +171,7 @@ h2 {
                     <img src="img/figures/idHijo2.png" alt="" class="figure idHijo2">
                     <img src="img/figures/TEXTO.png" alt="" class="figure idTexto">
                     <img src="img/figures/idImage.png" alt="" class="figure idImage">
+                    <img src="img/figures/claseContenedor.png" alt="" class="figure claseContenedor">
                     <div class="pizarra">
                         <img src="img/Cuadriculas.svg" class="cuadriculas">
                     </div>

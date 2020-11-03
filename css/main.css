@@ -126,6 +126,18 @@ body {
           transform: translateX(-50%);
 }
 
+#contenedor-secundario .figure.claseContenedor {
+  display: none;
+  vertical-align: top;
+  top: 50%;
+  left: 50%;
+}
+
+#contenedor-secundario .figure.claseContenedor.active {
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
 #contenedor-secundario .pizarra {
   height: 100%;
   background: #fff;
@@ -194,11 +206,11 @@ body {
   overflow: hidden;
 }
 
-.editor #codigo .texto-cod-two, .editor #codigo .texto-cod-three, .editor #codigo .texto-cod-four, .editor #codigo .texto-cod-five {
+.editor #codigo .texto-cod-two, .editor #codigo .texto-cod-three, .editor #codigo .texto-cod-four, .editor #codigo .texto-cod-five, .editor #codigo .texto-cod-six {
   display: none;
 }
 
-.editor #codigo #btnSiguienteTwo, .editor #codigo #btnSiguienteThree, .editor #codigo #btnSiguienteFour, .editor #codigo #btnSiguienteFive {
+.editor #codigo #btnSiguienteTwo, .editor #codigo #btnSiguienteThree, .editor #codigo #btnSiguienteFour, .editor #codigo #btnSiguienteFive, .editor #codigo #btnSiguienteSix {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -225,16 +237,16 @@ body {
   border-radius: 3px;
 }
 
-.editor #codigo #btnSiguienteTwo:hover, .editor #codigo #btnSiguienteThree:hover, .editor #codigo #btnSiguienteFour:hover, .editor #codigo #btnSiguienteFive:hover {
+.editor #codigo #btnSiguienteTwo:hover, .editor #codigo #btnSiguienteThree:hover, .editor #codigo #btnSiguienteFour:hover, .editor #codigo #btnSiguienteFive:hover, .editor #codigo #btnSiguienteSix:hover {
   background-color: #0083B0;
 }
 
-.editor #codigo #btnSiguienteTwo:active, .editor #codigo #btnSiguienteThree:active, .editor #codigo #btnSiguienteFour:active, .editor #codigo #btnSiguienteFive:active {
+.editor #codigo #btnSiguienteTwo:active, .editor #codigo #btnSiguienteThree:active, .editor #codigo #btnSiguienteFour:active, .editor #codigo #btnSiguienteFive:active, .editor #codigo #btnSiguienteSix:active {
   -webkit-transform: scale(0.975);
           transform: scale(0.975);
 }
 
-.editor #codigo #code-one, .editor #codigo #code-two, .editor #codigo #code-three, .editor #codigo #code-four, .editor #codigo #code-five {
+.editor #codigo #code-one, .editor #codigo #code-two, .editor #codigo #code-three, .editor #codigo #code-four, .editor #codigo #code-five, .editor #codigo #code-six {
   display: block;
   width: calc(100% - 16px);
   height: 24px;

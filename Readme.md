@@ -60,4 +60,4 @@ Esta herramienta es de todos, para todos!
 
 
 
-![Image Javascript](https://raw.githubusercontent.com/Edward-Alarco/central-point-game/master/img/javascript-mini.png?token=ANLIZ2QWLFYDOQHCNV43WXC7UGOKC)
+![MiniJavascript](https://raw.githubusercontent.com/Edward-Alarco/central-point-game/master/img/miniScript.png?token=ANLIZ2W5LRPEN7KM5FMQNDK7UGR5M)

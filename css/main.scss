@@ -258,3 +258,100 @@ a#buttonModal{
         color: #fff;
     }
 }
+
+// RESPONSIVE W/ MEDIA QUERIES
+
+@media all and (max-width: 1290px){
+    #contenedor-secundario{
+        width: 70%;
+    }
+}
+@media all and (max-width: 1210px){
+    #contenedor-secundario{
+        width: 75%;
+    }
+    #main-container{
+        padding: 1.45rem;
+    }
+    a#buttonModal #infoExtra{
+        margin: 0.9rem;
+    }
+}
+@media all and (max-width: 1150px){
+    #contenedor-secundario{
+        width: 80%;
+    }
+    a#buttonModal #infoExtra{
+        margin: 0.45rem;
+    }
+    #contenedor-secundario .figure.idContenedor.active{
+        top: 4.3%;
+    }
+}
+@media all and (max-width: 1000px){
+    #main-title{
+        font-size: 1.5rem;
+    }
+    .parrafo-aviso{
+        font-size: 0.75rem;
+    }
+    #contenedor-secundario .rombo{
+        bottom: -140px;
+        right: -140px;
+    }
+    a#buttonModal #infoExtra{
+        margin-bottom: 0.45rem;
+        margin-top: 0;
+        margin-left: 0;
+        margin-right: 0;
+        right: -3%;
+    }
+    #creditos{
+        font-size: 0.75rem !important;
+    }
+    .modal-title{
+        font-size: 1rem;
+    }
+    #instrucciones{
+        li{
+            font-size: 0.9rem;
+        }
+    }
+    #contribuciones{
+        font-size: 0.9rem;
+    }
+}
+@media all and (max-width: 870px){
+    #contenedor-secundario{
+        width: 90%;
+    }
+    a#buttonModal #infoExtra{
+        width: 40px;
+        height: 40px;
+        i{
+            font-size: 1rem;
+        }
+    }
+    .editor #codigo #btnSiguienteTwo, .editor #codigo #btnSiguienteThree, .editor #codigo #btnSiguienteFour, .editor #codigo #btnSiguienteFive, .editor #codigo #btnSiguienteSix{
+        padding: 6px 10px;
+    }
+}
+
+@media all and (max-width: 769px){
+    #contenedor-secundario{
+        width: 100%;
+    }
+    a#buttonModal #infoExtra{
+        display: none;
+    }
+    #contenedor-secundario .rombo{
+        bottom: -160px;
+        right: -160px;
+    }
+}
+
+@media all and (max-width: 576px){
+    #mbcustom{
+        margin-bottom: 2rem;
+    }
+}

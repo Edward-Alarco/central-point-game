@@ -211,6 +211,7 @@ body {
 }
 
 .editor #codigo #btnSiguienteTwo, .editor #codigo #btnSiguienteThree, .editor #codigo #btnSiguienteFour, .editor #codigo #btnSiguienteFive, .editor #codigo #btnSiguienteSix {
+  opacity: 0.65;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -283,5 +284,33 @@ body {
   line-height: 1.5;
   color: #777;
   font-size: 0.95rem;
+}
+
+a#buttonModal {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.25rem;
+}
+
+a#buttonModal #infoExtra {
+  bottom: 0;
+  right: 0;
+  width: 50px;
+  height: 50px;
+  background-color: #0083B0;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 5px 5px 5px #3498db;
+          box-shadow: 5px 5px 5px #3498db;
+  margin: 1.25rem;
+  color: #fff;
 }
 /*# sourceMappingURL=main.css.map */

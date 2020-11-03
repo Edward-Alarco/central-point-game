@@ -5,12 +5,14 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Favicon -->
     <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
-    <!-- Ionicons -->
+    <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/b72be65822.js" crossorigin="anonymous"></script>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
         integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <!-- CSS Custom -->
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/main.css.map">
 
@@ -65,7 +67,7 @@
 #contenedor {
     display: block;</pre>
                             <textarea spellcheck="false" autocapitalize="none" id="code-one" autofocus
-                                style="height: 24px;"></textarea>
+                                style="height: 24px;" onkeydown="noPuntoComa( event )"></textarea>
                             <pre id="codigo-final">}</pre>
 
                             <button id="btnSiguienteTwo" type="button" disabled>Siguiente &nbsp;<i
@@ -78,7 +80,7 @@
     height: 200px;
     display: flex;</pre>
                             <textarea spellcheck="false" autocapitalize="none" id="code-two" autofocus
-                                style="height: 24px;"></textarea>
+                                style="height: 24px;" onkeydown="noPuntoComa( event )"></textarea>
                             <pre id="codigo-final">}
 #padre #hijo {
     height: 100%;
@@ -95,7 +97,7 @@
     height: 400px;
     justify-content: center;</pre>
                             <textarea spellcheck="false" autocapitalize="none" id="code-three" autofocus
-                                style="height: 24px;" autocomplete="off"></textarea>
+                                style="height: 24px;" autocomplete="off" onkeydown="noPuntoComa( event )"></textarea>
                             <pre id="codigo-final">}
 #padre #hijo{
     width: 20px;
@@ -111,7 +113,7 @@
 h2 {
     font-size: 2rem</pre>
                             <textarea spellcheck="false" autocapitalize="none" id="code-four" autofocus
-                                style="height: 24px;"></textarea>
+                                style="height: 24px;" onkeydown="noPuntoComa( event )"></textarea>
                             <pre id="codigo-final">}</pre>
 
                             <button id="btnSiguienteFive" type="button" disabled>Siguiente &nbsp;<i
@@ -124,7 +126,7 @@ h2 {
     height: auto;
     display: block;</pre>
                             <textarea spellcheck="false" autocapitalize="none" id="code-five" autofocus
-                                style="height: 24px;"></textarea>
+                                style="height: 24px;" onkeydown="noPuntoComa( event )"></textarea>
                             <pre id="codigo-final">}</pre>
 
                             <button id="btnSiguienteSix" type="button" disabled>Siguiente &nbsp;<i
@@ -136,13 +138,13 @@ h2 {
     top: 50%;
     left: 50%;</pre>
                             <textarea spellcheck="false" autocapitalize="none" id="code-six" autofocus
-                                style="height: 24px;"></textarea>
+                                style="height: 24px;" onkeydown="noPuntoComa( event )"></textarea>
                             <pre id="codigo-final">}</pre>
                         </div>
                     </section>
                     <div class="text-center my-3">
                         <p style="font-size: 0.875rem; color: rgba(255, 255, 255, 0.8);">
-                            Hecho con <span style="color: #e74c3c;">❤</span> por <a href="https://github.com/Edward-Alarco" style="color: #fff;">Edward A.</a> - <a style="color: #fff;" href="https://github.com/Edward-Alarco/central-point-game">Github</a>
+                            Hecho con <span style="color: #e74c3c;">❤</span> por <a target="_blank" href="https://github.com/Edward-Alarco" style="color: #fff;">Edward A.</a> - <a style="color: #fff;" target="_blank" href="https://github.com/Edward-Alarco/central-point-game">Github</a>
                         </p>
                     </div>
                     <div class="d-none border-0 rounded-0 list-group list-group-horizontal" id="list-tab" role="tablist">
@@ -161,7 +163,7 @@ h2 {
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-sm-6 col-md-7 d-flex align-items-center">
+            <div class="col-12 col-sm-6 col-md-7 d-flex align-items-center position-relative pr-0">
                 <div id="contenedor-secundario">
                     <!-- <img src="img/javascript-mini.png" draggable="false" alt="Muñeco Javascript" class="object"> -->
                     <img src="img/figures/idContenedor.png" alt="" class="figure idContenedor">
@@ -177,11 +179,54 @@ h2 {
                     </div>
                     <div class="rombo"></div>
                 </div>
+                <a href="#staticBackdrop" role="button" data-toggle="modal" id="buttonModal"><div class="position-absolute" id="infoExtra">
+                    <i class="fas fa-question"></i>
+                </div></a>
             </div>
         </div>
     </div>
 
+    <!-- Modal -->
+    <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="staticBackdropLabel">Información acerca de</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body px-5">
+              <ul>
+                  <li>Completa cada una de las pruebas con la respuesta correcta bien escrita.</li>
+                  <li>No es necesario cerrar la linea con una (;)</li>
+                  <li>Lee con atención el texto, ya que ayuda mucho en las resoluciones.</li>
+              </ul>
+              <p>Si deseas contribuir en el proyecto, escribeme al siguiente correo: <span style="color: #e74c3c;">edwarddac.56@gmail.com</span></p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary" data-dismiss="modal">Entendido</button>
+            </div>
+          </div>
+        </div>
+      </div>
 
+
+
+
+
+    <script>
+        function noPuntoComa( event ) {
+  
+          var e = event || window.event;
+          var key = e.keyCode || e.which;
+
+          if ( key === 110 || key === 188 ) {     
+
+             e.preventDefault();     
+          }
+        }
+    </script>
 
 
     <script src="js/script.js"></script>

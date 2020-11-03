@@ -20,12 +20,13 @@
 
     <div class="container-fluid" id="main-container">
         <div class="row w-100 h-100">
-            <div class="col-12 col-md-5 col-lg-5">
+            <div class="col-12 col-md-5">
                 <div class="seccion-encabezado">
                     <h2 id="main-title">central entertainment</h2>
 
                     <div class="tab-content" id="nav-tabContent">
-                        <div class="tab-pane fade show active" role="tabpanel" id="list-1" aria-labelledby="list-1-list">
+                        <div class="tab-pane fade show active" role="tabpanel" id="list-1"
+                            aria-labelledby="list-1-list">
                             <p class="parrafo-aviso" id="primer-parrafo-primer-nivel"></p>
                             <p class="parrafo-aviso" id="segundo-parrafo-primer-nivel"></p>
                         </div>
@@ -50,26 +51,87 @@
                 <div class="editor">
                     <section id="codigo" class="codigo">
                         <div class="line-numbers">
-                            1 <br> 2 <br> 3 <br> 4 <br> 5 <br> 6 <br> 7 <br> 8 <br> 9 <br> 10 <br> 11 <br> 12 <br> 13 <br>
+                            1 <br> 2 <br> 3 <br> 4 <br> 5 <br> 6 <br> 7 <br> 8 <br> 9 <br> 10 <br> 11 <br> 12 <br> 13
+                            <br>
                             14
                         </div>
-                        <pre id="codigo-comienzo">
-#cuadro-azul {
+                        <div class="texto-cod-one">
+                            <pre id="codigo-comienzo">
+#javascript {
     display: block;</pre>
-                        <textarea spellcheck="false" autocapitalize="none" id="code" autofocus style="height: 24px;"></textarea>
-                        <pre id="codigo-final">}</pre>
-                        <button id="btnSiguiente" type="button" disabled>Siguiente &nbsp;<i class="fas fa-long-arrow-alt-right"></i></button>
+                            <textarea spellcheck="false" autocapitalize="none" id="code-one" autofocus
+                                style="height: 24px;"></textarea>
+                            <pre id="codigo-final">}</pre>
+
+                            <button id="btnSiguienteTwo" type="button" disabled>Siguiente &nbsp;<i
+                                class="fas fa-long-arrow-alt-right"></i></button>
+                        </div>
+                        <div class="texto-cod-two">
+                            <pre id="codigo-comienzo">
+#html5 {
+    display: flex;</pre>
+                            <textarea spellcheck="false" autocapitalize="none" id="code-two" autofocus
+                                style="height: 24px;"></textarea>
+                            <pre id="codigo-final">}</pre>
+
+                            <button id="btnSiguienteThree" type="button" disabled>Siguiente &nbsp;<i
+                                class="fas fa-long-arrow-alt-right"></i></button>
+                        </div>
+                        <div class="texto-cod-three">
+                            <pre id="codigo-comienzo">
+#contenedor {
+    display: flex;
+    justify-content: center;</pre>
+                            <textarea spellcheck="false" autocapitalize="none" id="code-three" autofocus
+                                style="height: 24px;" autocomplete="off"></textarea>
+                            <pre id="codigo-final">}
+#contenedor #hijo{
+    width: 20px;
+    height: 20px;
+}
+                            </pre>
+
+                            <button id="btnSiguienteFour" type="button" disabled>Siguiente &nbsp;<i
+                                class="fas fa-long-arrow-alt-right"></i></button>
+                        </div>
+                        <div class="texto-cod-four">
+                            <pre id="codigo-comienzo">
+#texto {
+    font-size: 16px</pre>
+                            <textarea spellcheck="false" autocapitalize="none" id="code-four" autofocus
+                                style="height: 24px;"></textarea>
+                            <pre id="codigo-final">}</pre>
+
+                            <button id="btnSiguienteFive" type="button" disabled>Siguiente &nbsp;<i
+                                class="fas fa-long-arrow-alt-right"></i></button>
+                        </div>
+                        <div class="texto-cod-five">
+                            <pre id="codigo-comienzo">
+#imagen {
+    width: auto;
+    height: auto;
+    display: block;</pre>
+                            <textarea spellcheck="false" autocapitalize="none" id="code-five" autofocus
+                                style="height: 24px;"></textarea>
+                            <pre id="codigo-final">}</pre>
+                        </div>
+
                     </section>
                     <div class="border-0 rounded-0 list-group list-group-horizontal" id="list-tab" role="tablist">
-                        <a class="border-0 rounded-0 p-1 text-center list-group-item list-group-item-action active" id="list-1-list" aria-controls="1" href="#list-1" role="tab" data-toggle="list">1</a>
-                        <a class="border-0 rounded-0 p-1 text-center list-group-item list-group-item-action" id="list-2-list" aria-controls="2" href="#list-2" role="tab" data-toggle="list">2</a>
-                        <a class="border-0 rounded-0 p-1 text-center list-group-item list-group-item-action" id="list-3-list" aria-controls="3" href="#list-3" role="tab" data-toggle="list">3</a>
-                        <a class="border-0 rounded-0 p-1 text-center list-group-item list-group-item-action" id="list-4-list" aria-controls="4" href="#list-4" role="tab" data-toggle="list">4</a>
-                        <a class="border-0 rounded-0 p-1 text-center list-group-item list-group-item-action" id="list-5-list" aria-controls="5" href="#list-5" role="tab" data-toggle="list">5</a>
+                        <a class="border-0 rounded-0 p-1 text-center list-group-item list-group-item-action active"
+                            id="list-1-list" aria-controls="1" href="#list-1" role="tab" data-toggle="list">1</a>
+                        <a class="border-0 rounded-0 p-1 text-center list-group-item list-group-item-action"
+                            id="list-2-list" aria-controls="2" href="#list-2" role="tab" data-toggle="list">2</a>
+                        <a class="border-0 rounded-0 p-1 text-center list-group-item list-group-item-action"
+                            id="list-3-list" aria-controls="3" href="#list-3" role="tab" data-toggle="list">3</a>
+                        <a class="border-0 rounded-0 p-1 text-center list-group-item list-group-item-action"
+                            id="list-4-list" aria-controls="4" href="#list-4" role="tab" data-toggle="list">4</a>
+                        <a class="border-0 rounded-0 p-1 text-center list-group-item list-group-item-action"
+                            id="list-5-list" aria-controls="5" href="#list-5" role="tab" data-toggle="list">5</a>
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-md-7 col-lg-7 d-flex align-items-center">
+            <div class="col-12 col-md-7 d-flex align-items-center">
                 <div id="contenedor-secundario">
                     <img src="img/1x/javascript-mini.png" draggable="false" alt="Muñeco Javascript" class="object">
                     <div class="pizarra">
@@ -85,6 +147,7 @@
 
 
     <script src="js/script.js"></script>
+    <script src="js/respuestas.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>

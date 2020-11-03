@@ -82,9 +82,18 @@ body {
   margin: 0 0 0.5rem 0;
 }
 
-.parrafo-aviso span {
+.parrafo-aviso span.auto {
   background: rgba(105, 105, 105, 0.5);
   padding: 1px 4px;
+}
+
+.parrafo-aviso span.red {
+  color: #c0392b;
+  font-weight: 600;
+}
+
+.list-group-item.active {
+  background-color: #999 !important;
 }
 
 #list-tab {
@@ -105,7 +114,11 @@ body {
   overflow: hidden;
 }
 
-.editor #codigo #btnSiguiente {
+.editor #codigo .texto-cod-two, .editor #codigo .texto-cod-three, .editor #codigo .texto-cod-four, .editor #codigo .texto-cod-five {
+  display: none;
+}
+
+.editor #codigo #btnSiguienteTwo, .editor #codigo #btnSiguienteThree, .editor #codigo #btnSiguienteFour, .editor #codigo #btnSiguienteFive {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -132,16 +145,16 @@ body {
   border-radius: 3px;
 }
 
-.editor #codigo #btnSiguiente:hover {
+.editor #codigo #btnSiguienteTwo:hover, .editor #codigo #btnSiguienteThree:hover, .editor #codigo #btnSiguienteFour:hover, .editor #codigo #btnSiguienteFive:hover {
   background-color: #0083B0;
 }
 
-.editor #codigo #btnSiguiente:active {
+.editor #codigo #btnSiguienteTwo:active, .editor #codigo #btnSiguienteThree:active, .editor #codigo #btnSiguienteFour:active, .editor #codigo #btnSiguienteFive:active {
   -webkit-transform: scale(0.975);
           transform: scale(0.975);
 }
 
-.editor #codigo #code {
+.editor #codigo #code-one, .editor #codigo #code-two, .editor #codigo #code-three, .editor #codigo #code-four, .editor #codigo #code-five {
   display: block;
   width: calc(100% - 16px);
   height: 24px;

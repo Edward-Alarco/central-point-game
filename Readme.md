@@ -58,4 +58,6 @@ Esta herramienta es de todos, para todos!
 
 **Software Open Source 😛!**
 
+
+
 ![Iamge Javascript](https://raw.githubusercontent.com/Edward-Alarco/central-point-game/master/img/javascript-mini.png?token=ANLIZ2X2ZJW456R6MVFFCLC7UGEJ6)

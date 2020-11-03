@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Grandstander&display=swap');
 
 $borde-pizarra: #030204;
 
@@ -16,12 +17,13 @@ body{
     background: linear-gradient(to right, #0083B0, #00B4DB);
 }
 #main-title{
-    font-size: 1.5rem;
+    font-size: 1.75rem;
     text-transform: uppercase;
+    font-family: 'Grandstander', cursive !important;
     font-weight: 700;
     color: #fff;
     letter-spacing: 0.075em;
-    margin-bottom: 1rem;
+    margin-bottom: 0.85rem;
 }
 #main-container{
     width: 100%;
@@ -36,11 +38,76 @@ body{
     padding: 1.5rem;
     position: relative;
     overflow: hidden;
-    img.object{
+    // img.object{
+    //     position: absolute;
+    //     z-index: 5;
+    //     width: 125px;
+    //     cursor: pointer;
+    // }
+    .figure{
         position: absolute;
         z-index: 5;
-        width: 125px;
         cursor: pointer;
+        &.idContenedor{
+            width: 185px;
+            height: 100px;
+            &.active{
+                top: 4.4%;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+        }
+        &.idPadre{
+            display: none;
+            width: 425.5px;
+        }
+        &.idHijo{
+            display: none;
+            position: absolute;
+            height: 145px;
+            right: 6.5%;
+            padding-top: 5px;
+            &.active{
+                right: 50%;
+                transform: translateX(50%);
+            }
+        }
+        &.idPadre2{
+            display: none;
+            width: 425.5px;
+        }
+        &.idHijo2{
+            display: none;
+            padding-top: 5px;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            &.active{
+                padding-top: 0px;
+                top: 19%;
+                transform: translate(-50%, 19%);
+            }
+        }
+        &.idTexto{
+            display: none;
+            padding: 5px;
+            &.active{
+                left: 50%;
+                transform: translateX(-50%);
+            }
+        }
+        &.idImage{
+            display: none;
+            width: 181.5px;
+            border-radius: 5px;
+            vertical-align: top;
+            object-fit: cover;
+            height: 181px;
+            &.active{
+                left: 50%;
+                transform: translateX(-50%);
+            }
+        }
     }
     .pizarra{
         height: 100%;

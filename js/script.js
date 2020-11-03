@@ -27,7 +27,7 @@
     primerNivel.primer_parrafo.innerText = `Añadir la propiedad del display de bloque, nos facilita entender las medidas y limitaciones de un objeto.`
     primerNivel.segundo_parrafo.innerHTML = `Al añadirle un <span class="auto">margin: auto</span> para todos sus lados, hace que se ubique en el centro de forma horizontal en el documento.`
     segundoNivel.primer_parrafo.innerText = `Un cambio drastico al display de bloque es el Flex, nos ayuda a distribuir los espacios en una interfaz, además de mejorar las alineaciones.`
-    segundoNivel.segundo_parrafo.innerHTML = `Con un <span class="auto">justify-content: center</span><span class="red"> al contenedor padre</span> nos reparte un espacio equitativo en ambos lados, pero sin moverlo de su posicion en Y.`
+    segundoNivel.segundo_parrafo.innerHTML = `Con un <span class="auto">justify-content: center</span><span class="red"> al contenedor padre</span> nos reparte un espacio equitativo en ambos lados para el .hijo, pero sin moverlo de su posicion en Y.`
     tercerNivel.primer_parrafo.innerHTML = `Al tener el objeto centrado en el eje de la X, <span class="red">con respecto a su contenedor padre</span>, podemos añadirle otra propiedad que viene con el <span class="auto">display: flex</span>`
     tercerNivel.segundo_parrafo.innerHTML = `<span class="auto">align-items: center</span> nos permite medir los lados en el eje Y y con respecto a la altura de su padre, se mueve al centro considerando todos los lados.`
     cuartoNivel.primer_parrafo.innerText = `Centrar un texto es lo más fácil que podemos realizar, este mismo tienes bastantes propiedades a su disposición.`
@@ -58,6 +58,15 @@
     btnSiguienteToThree.addEventListener('click',toThree);
     btnSiguienteToFour.addEventListener('click',toFour);
     btnSiguienteToFive.addEventListener('click',toFive);
+
+    //Imagenes
+    const imgIdContenedor = document.querySelector('.idContenedor')
+    const imgIdPadre = document.querySelector('.idPadre')
+    const imgIdHijo = document.querySelector('.idHijo')
+    const imgIdPadre2 = document.querySelector('.idPadre2')
+    const imgIdHijo2 = document.querySelector('.idHijo2')
+    const imgTexto = document.querySelector('.idTexto')
+    const imgImage = document.querySelector('.idImage')
     
     
     // Funciones
@@ -68,6 +77,11 @@
         document.getElementsByClassName('texto-cod-three')[0].style.display = "none"
         document.getElementsByClassName('texto-cod-four')[0].style.display = "none"
         document.getElementsByClassName('texto-cod-five')[0].style.display = "none"
+
+        document.getElementById('code-one').value = ""
+        document.getElementById('code-two').value = ""
+        document.getElementById('code-three').value = ""
+        document.getElementById('code-four').value = ""
     }
     
     function btndos (){
@@ -76,6 +90,15 @@
         document.getElementsByClassName('texto-cod-three')[0].style.display = "none"
         document.getElementsByClassName('texto-cod-four')[0].style.display = "none"
         document.getElementsByClassName('texto-cod-five')[0].style.display = "none"
+
+        document.getElementById('code-one').value = ""
+        document.getElementById('code-two').value = ""
+        document.getElementById('code-three').value = ""
+        document.getElementById('code-four').value = ""
+
+        imgIdContenedor.style.display = "none"
+        imgIdPadre.style.display = "block"
+        imgIdHijo.style.display = "block"
     }
     
     function btntres (){
@@ -84,6 +107,16 @@
         document.getElementsByClassName('texto-cod-three')[0].style.display = "block"
         document.getElementsByClassName('texto-cod-four')[0].style.display = "none"
         document.getElementsByClassName('texto-cod-five')[0].style.display = "none"
+
+        document.getElementById('code-one').value = ""
+        document.getElementById('code-two').value = ""
+        document.getElementById('code-three').value = ""
+        document.getElementById('code-four').value = ""
+
+        imgIdPadre.style.display = "none"
+        imgIdHijo.style.display = "none"
+        imgIdPadre2.style.display = "block"
+        imgIdHijo2.style.display = "block"
     }
     
     function btncuatro (){
@@ -92,6 +125,15 @@
         document.getElementsByClassName('texto-cod-three')[0].style.display = "none"
         document.getElementsByClassName('texto-cod-four')[0].style.display = "block"
         document.getElementsByClassName('texto-cod-five')[0].style.display = "none"
+
+        document.getElementById('code-one').value = ""
+        document.getElementById('code-two').value = ""
+        document.getElementById('code-three').value = ""
+        document.getElementById('code-four').value = ""
+
+        imgIdPadre2.style.display = "none"
+        imgIdHijo2.style.display = "none"
+        imgTexto.style.display = "block"
     }
     
     function btncinco (){
@@ -100,6 +142,14 @@
         document.getElementsByClassName('texto-cod-three')[0].style.display = "none"
         document.getElementsByClassName('texto-cod-four')[0].style.display = "none"
         document.getElementsByClassName('texto-cod-five')[0].style.display = "block"
+
+        document.getElementById('code-one').value = ""
+        document.getElementById('code-two').value = ""
+        document.getElementById('code-three').value = ""
+        document.getElementById('code-four').value = ""
+
+        imgTexto.style.display = "none"
+        imgImage.style.display = "block"
     }
     
     // Funciones para los Botones Siguiente

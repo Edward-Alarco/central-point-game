@@ -3,11 +3,11 @@
     
 
     var textareas = {
-        primerTextArea: document.getElementById('code-one').value,
-        segundoTextArea: document.getElementById('code-two').value,
-        terceroTextArea: document.getElementById('code-three').value,
-        cuartoTextArea: document.getElementById('code-four').value,
-        quintoTextArea: document.getElementById('code-five').value
+        primerTextArea: document.getElementById('code-one'),
+        segundoTextArea: document.getElementById('code-two'),
+        terceroTextArea: document.getElementById('code-three'),
+        cuartoTextArea: document.getElementById('code-four'),
+        quintoTextArea: document.getElementById('code-five')
     }
 
     var rptasUno = {
@@ -30,18 +30,33 @@
     var validaciones = {
 
         validacion: function(){
-            if (textareas.primerTextArea !== "") {
-                document.getElementById('btnSiguienteTwo').removeAttribute('disabled');
-            }
-            if (textareas.segundoTextArea !== "") {
-                document.getElementById('btnSiguienteThree').removeAttribute('disabled');
-            }
-            if (textareas.terceroTextArea !== "") {
-                document.getElementById('btnSiguienteFour').removeAttribute('disabled');
-            }
-            if (textareas.cuartoTextArea !== "") {
-                document.getElementById('btnSiguienteFive').removeAttribute('disabled');
-            }
+
+            textareas.primerTextArea.addEventListener('keyup',function(){
+                if (textareas.primerTextArea !== "") {
+                    document.getElementById('btnSiguienteTwo').removeAttribute('disabled');
+                }
+            })
+            textareas.segundoTextArea.addEventListener('keyup',function(){
+                if (textareas.segundoTextArea !== "") {
+                    document.getElementById('btnSiguienteThree').removeAttribute('disabled');
+                }
+            })
+            textareas.terceroTextArea.addEventListener('keyup',function(){
+                if (textareas.terceroTextArea !== "") {
+                    document.getElementById('btnSiguienteFour').removeAttribute('disabled');
+                }
+            })
+            textareas.cuartoTextArea.addEventListener('keyup',function(){
+                if (textareas.cuartoTextArea !== "") {
+                    document.getElementById('btnSiguienteFive').removeAttribute('disabled');
+                }
+            })
+
+
+
+            
+            
+            
         },
 
 

@@ -5,6 +5,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
     <!-- Ionicons -->
     <script src="https://kit.fontawesome.com/b72be65822.js" crossorigin="anonymous"></script>
     <!-- Bootstrap CSS -->
@@ -13,7 +14,7 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/main.css.map">
 
-    <title>Central Entertainment</title>
+    <title>Central Point</title>
 </head>
 
 <body>
@@ -22,7 +23,7 @@
         <div class="row w-100 h-100">
             <div class="col-12 col-md-5">
                 <div class="seccion-encabezado">
-                    <h2 id="main-title">central entertainment</h2>
+                    <h2 id="main-title">central point</h2>
 
                     <div class="tab-content" id="nav-tabContent">
                         <div class="tab-pane fade show active" role="tabpanel" id="list-1"
@@ -57,7 +58,7 @@
                         </div>
                         <div class="texto-cod-one">
                             <pre id="codigo-comienzo">
-#javascript {
+#contenedor {
     display: block;</pre>
                             <textarea spellcheck="false" autocapitalize="none" id="code-one" autofocus
                                 style="height: 24px;"></textarea>
@@ -68,24 +69,31 @@
                         </div>
                         <div class="texto-cod-two">
                             <pre id="codigo-comienzo">
-#html5 {
+#padre {
+    width: 100%;
+    height: 200px;
     display: flex;</pre>
                             <textarea spellcheck="false" autocapitalize="none" id="code-two" autofocus
                                 style="height: 24px;"></textarea>
-                            <pre id="codigo-final">}</pre>
+                            <pre id="codigo-final">}
+#padre #hijo {
+    height: 100%;
+    width: 200px;
+}</pre>
 
                             <button id="btnSiguienteThree" type="button" disabled>Siguiente &nbsp;<i
                                 class="fas fa-long-arrow-alt-right"></i></button>
                         </div>
                         <div class="texto-cod-three">
                             <pre id="codigo-comienzo">
-#contenedor {
+#padre {
     display: flex;
+    height: 400px;
     justify-content: center;</pre>
                             <textarea spellcheck="false" autocapitalize="none" id="code-three" autofocus
                                 style="height: 24px;" autocomplete="off"></textarea>
                             <pre id="codigo-final">}
-#contenedor #hijo{
+#padre #hijo{
     width: 20px;
     height: 20px;
 }
@@ -96,8 +104,8 @@
                         </div>
                         <div class="texto-cod-four">
                             <pre id="codigo-comienzo">
-#texto {
-    font-size: 16px</pre>
+h2 {
+    font-size: 2rem</pre>
                             <textarea spellcheck="false" autocapitalize="none" id="code-four" autofocus
                                 style="height: 24px;"></textarea>
                             <pre id="codigo-final">}</pre>
@@ -133,7 +141,14 @@
             </div>
             <div class="col-12 col-md-7 d-flex align-items-center">
                 <div id="contenedor-secundario">
-                    <img src="img/1x/javascript-mini.png" draggable="false" alt="Muñeco Javascript" class="object">
+                    <!-- <img src="img/javascript-mini.png" draggable="false" alt="Muñeco Javascript" class="object"> -->
+                    <img src="img/figures/idContenedor.png" alt="" class="figure idContenedor">
+                    <img src="img/figures/idPadre.png" alt="" class="figure idPadre">
+                    <img src="img/figures/idHijo.png" alt="" class="figure idHijo">
+                    <img src="img/figures/idPadre2.png" alt="" class="figure idPadre2">
+                    <img src="img/figures/idHijo2.png" alt="" class="figure idHijo2">
+                    <img src="img/figures/TEXTO.png" alt="" class="figure idTexto">
+                    <img src="img/figures/idImage.png" alt="" class="figure idImage">
                     <div class="pizarra">
                         <img src="img/Cuadriculas.svg" class="cuadriculas">
                     </div>

@@ -61,3 +61,6 @@ Esta herramienta es de todos, para todos!
 
 
 ![MiniJavascript](https://raw.githubusercontent.com/Edward-Alarco/central-point-game/master/img/miniScript.png?token=ANLIZ2W5LRPEN7KM5FMQNDK7UGR5M)
+
+
+> Central Point - Edward A. | 2020 

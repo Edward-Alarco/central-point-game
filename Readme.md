@@ -1,6 +1,11 @@
 # CENTRAL POINT - Juego Javascript
 by [Edward A.](https://github.com/Edward-Alarco)
 
+
+### Desarrollo
+
+Inspirado en [CSS Grid Garden](http://cssgridgarden.com/) por [Thomas Park](https://github.com/thomaspark), nació `Central Point`, con la idea de ayudar a los novatos que comienzan en el mundo de la programación a saber ubicar objetos del DOM en el centro, teniendo en cuenta ambos ejes (X y Y).
+
 ### Tecnologias Usadas
 
 Se usaron las tres tecnologias basicas de toda la web.
@@ -9,7 +14,7 @@ Se usaron las tres tecnologias basicas de toda la web.
 * [CSS3] - Estilizados especificos.
 * [JavaScript] - Funcionalidad y animaciones.
 
-Se hizo buen uso del sistema de control de versiones `Github`
+Además, se hizo buen uso del sistema de control de versiones `Github`
 
 ### Respuestas
 
@@ -34,11 +39,6 @@ margin: auto;
 transform: translate(-50%,-50%);
 ```
 
-
-
-### Desarrollo
-
-Inspirado en [CSS Grid Garden](http://cssgridgarden.com/) por [Thomas Park](https://github.com/thomaspark), nació `Central Point`, con la idea de ayudar a los novatos que comienzan en el mundo de la programación a saber ubicar objetos del DOM en el centro, teniendo en cuenta ambos ejes (X y Y).
 
 
 ### ¿Deseas contribuir?

@@ -11,7 +11,7 @@ Inspirado en [CSS Grid Garden](http://cssgridgarden.com/) por [Thomas Park](http
 Se usaron las tres tecnologias basicas de toda la web.
 
 * [HTML5 / Bootstrap] - Estructurado rapido.
-* [CSS3] - Estilizados especificos.
+* [CSS3 / Sass] - Estilizados especificos.
 * [JavaScript] - Funcionalidad y animaciones.
 
 Además, se hizo buen uso del sistema de control de versiones `Github`
